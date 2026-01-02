@@ -1,0 +1,140 @@
+/* Overlay background */
+.filter-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* ensure it overlays */
+}
+
+/* Filter container */
+.filter-con {
+  margin-top: 7rem;
+  background-color: #fff;
+  max-width: 650px;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px #999;
+  padding: clamp(1rem, 5vw, 2rem);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Header */
+.filter_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.filter_header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter_header button {
+  background: #ebebeb;
+  color: #000000;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.filter_header button:hover {
+  background: black;
+  color: white;
+}
+
+/* Filters wrapper */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Each filter group */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+/* Search input */
+.filter-group input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Range slider */
+.filter-group input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.filter-group input[type="radio"] {
+  margin: var(--space-xs) var(--space-xs) 0 0;
+}
+/* Footer section for buttons */
+.filter-footer {
+  display: flex;
+  justify-content: flex-end; /* align confirm button to the right */
+  margin-top: 1.5rem;
+}
+
+/* Confirm button */
+.confirm-btn {
+  background: #d62828;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.confirm-btn:hover {
+  background-color: #140101;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-footer {
+    justify-content: center; /* center button on smaller screens */
+  }
+
+  .confirm-btn {
+    width: 80%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .filter-con {
+    margin: 2rem;
+  }
+}

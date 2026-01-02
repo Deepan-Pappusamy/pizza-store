@@ -1,0 +1,86 @@
+/* Container */
+.customize-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+.customize-visual {
+  width: 45%;
+  /* border: 2px solid black; */
+}
+/* Image section */
+.customize-visual img {
+  max-width: 100%;
+  height: auto;
+  /* filter: drop-shadow(5px 5px 5px rgba(2, 2, 2, 0.9)); */
+}
+
+/* Content section */
+.customize-content {
+  width: 45%;
+}
+
+.customize-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.customize-content li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  /* padding-left: 1rem; */
+  position: relative;
+}
+
+/* Button */
+.pizza-btn {
+  background: #d62828;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.pizza-btn:hover {
+  background-color: #140101;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .customize-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .customize-visual {
+    width: 95%;
+    /* border: 2px solid black; */
+  }
+
+  /* Content section */
+  .customize-content {
+    width: 95%;
+  }
+
+  .customize-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .customize-content li {
+    font-size: 1rem;
+  }
+
+  .pizza-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

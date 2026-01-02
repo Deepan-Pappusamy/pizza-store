@@ -1,0 +1,177 @@
+/* Card wrapper */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 290px; /* keeps cards aligned in flex wrap */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  scale: 0.8;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry 100px;
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #d62828;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* Image area with 4:4 ratio */
+.image {
+  width: 100%;
+  aspect-ratio: 4 / 4; /* square ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover .image img {
+  transform: scale(1.1);
+}
+
+/* Details */
+.details {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.pizza-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+.type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type.Veg i {
+  font-size: 10px;
+  border: 2px solid green;
+  color: green;
+}
+
+.type.Non-Veg i {
+  font-size: 10px;
+  border: 2px solid rgb(134, 0, 0);
+  color: rgb(134, 0, 0);
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  transition: display 2s ease;
+}
+.description.short {
+  display: none;
+}
+.card:hover {
+  .description.short {
+    display: none;
+  }
+  .description.full {
+    display: block;
+  }
+}
+/* Pricing */
+.pricing {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.actual-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.offer-price {
+  color: #d62828;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Footer */
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  font-size: 0.95rem;
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.add-to-cart-btn {
+  min-width: 130px;
+  background: #d62828;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #140101;
+}
+
+.add-to-cart-btn:disabled {
+  background: #ccc; /* faded background */
+  color: #666; /* faded text */
+  cursor: not-allowed; /* show disabled cursor */
+  opacity: 0.7; /* fade effect */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+  }
+}

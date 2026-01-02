@@ -1,0 +1,164 @@
+.support-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 6rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fdf2e9;
+}
+.support_visual {
+  max-width: 460px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support_content {
+  max-width: 460px;
+  background-color: #fdf2e9;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.support_visual img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 24px;
+}
+.msg_bubble {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.msg_bubble.user {
+  justify-content: end;
+}
+.msg_bubble.user p {
+  background-color: #5c3d2e;
+  color: white;
+}
+.msg_bubble p {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: var(--space-md);
+}
+.msg_bubble p .help-span {
+  font-weight: bold;
+}
+.input_area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.support_textarea {
+  flex: 1;
+  padding: 0.5rem;
+  border: 3px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+  animation: breath infinite 5s linear;
+}
+.support_send_button {
+  background: #d62828;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+.support_send_button:hover {
+  background-color: #140101;
+}
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #5c3d2e; /* cursor */
+  padding-right: 6px;
+  animation: typing 5s steps(35, end) infinite, blink 0.8s step-end infinite;
+}
+
+@keyframes breath {
+  0% {
+    border-color: #ddd;
+  }
+  50% {
+    border-color: #5c3d2e;
+  }
+  100% {
+    border-color: #ddd;
+  }
+}
+
+/* typing + erasing loop */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 100%;
+  }
+  66% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.support_textarea:focus {
+  border-color: #5c3d2e;
+}
+
+.support_button {
+  background-color: #d62828;
+  color: white;
+}
+
+.support_button:hover {
+  background-color: #140101;
+}
+
+@media (max-width: 768px) {
+  .support-section {
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .support_visual {
+    width: 90%;
+  }
+  .support_visual img {
+    width: 90%;
+  }
+  .support_content {
+    margin-top: 4rem;
+    width: 90%;
+    padding: 0.8rem;
+  }
+  .input_area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}

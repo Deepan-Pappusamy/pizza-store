@@ -1,0 +1,31 @@
+.scrollProgressBar {
+  height: 4px;
+  position: fixed;
+  top: 0;
+  background-color: rgb(164, 0, 0);
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  z-index: 1000;
+  animation: scroller linear;
+  animation-timeline: scroll();
+}
+.scrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #d62828;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@keyframes scroller {
+  to {
+    scale: 1 1;
+  }
+}

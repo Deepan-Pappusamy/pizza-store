@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "type": "Veg",
+    "name": "Margherita Pizza",
+    "actualPrice": 299,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Classic delight with mozzarella cheese and fresh basil.",
+    "image": "MargheritaPizza"
+  },
+  {
+    "id": 2,
+    "type": "Veg",
+    "name": "Veggie Supreme Pizza",
+    "actualPrice": 349,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Loaded with bell peppers, onions, olives, and mushrooms.",
+    "image": "VeggieSupreme"
+  },
+  {
+    "id": 3,
+    "type": "Veg",
+    "name": "Paneer Tikka Pizza",
+    "actualPrice": 399,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Spicy paneer tikka cubes with onions and capsicum.",
+    "image": "PaneerTikkaPizza"
+  },
+  {
+    "id": 4,
+    "type": "Veg",
+    "name": "Cheese Burst Pizza",
+    "actualPrice": 449,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Molten cheese-filled crust with extra cheese topping.",
+    "image": "CheeseBurstPizza"
+  },
+  {
+    "id": 5,
+    "type": "Veg",
+    "name": "Farmhouse Pizza",
+    "actualPrice": 379,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "A mix of fresh veggies like tomato, capsicum, onion, and mushroom.",
+    "image": "FarmhousePizza"
+  },
+  {
+    "id": 6,
+    "type": "Non-Veg",
+    "name": "Pepperoni Pizza",
+    "actualPrice": 399,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Spicy pepperoni slices with gooey mozzarella cheese.",
+    "image": "PepperoniPizza"
+  },
+  {
+    "id": 7,
+    "type": "Non-Veg",
+    "name": "BBQ Chicken Pizza",
+    "actualPrice": 449,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Smoky BBQ chicken chunks with caramelized onions.",
+    "image": "BBQChickenPizza"
+  },
+  {
+    "id": 8,
+    "type": "Non-Veg",
+    "name": "Chicken Tikka Pizza",
+    "actualPrice": 429,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Indian-style chicken tikka with spicy sauce and veggies.",
+    "image": "ChickenTikkaPizza"
+  },
+  {
+    "id": 9,
+    "type": "Non-Veg",
+    "name": "Meat Lovers Pizza",
+    "actualPrice": 499,
+    "offerPrice": 0,
+    "offerPercentage": 0,
+    "starRatings": 0,
+    "description": "Packed with chicken, sausage, ham, and pepperoni.",
+    "image": "MeatLoversPizza"
+  }
+]
