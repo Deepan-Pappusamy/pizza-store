@@ -140,7 +140,6 @@
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    text-align: center;
     justify-content: center;
     padding: clamp(2rem, 5vw, 4rem);
   }

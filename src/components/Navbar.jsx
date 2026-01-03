@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DeeLogo from "../assets/photos/logo/dee_bee_food_logo.png";
+import DeeLogo from "../assets/photos/logo/ps-logo.png";
 import "../styles/navbar.css";
 import { PizzaContext } from "../context/PizzaContext";
 import { useContext } from "react";

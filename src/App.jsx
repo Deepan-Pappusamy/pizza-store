@@ -12,6 +12,7 @@ import Custome from "./pages/Custome";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import ScrollRestoration from "./components/ScrollRestoration";
 import CustomerSupport from "./components/CustomerSupport";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/pizza_customize" element={<Custome />} />
         <Route path="/contact" element={<CustomerSupport />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <ScrollToTopButton />

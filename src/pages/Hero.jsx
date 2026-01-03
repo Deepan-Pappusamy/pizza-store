@@ -5,7 +5,7 @@ import onion_ring from "../assets/photos/hero/Onion-ring.png";
 import tomato from "../assets/photos/hero/tomato_exploding.png";
 import { BUTTONS, TEXTS, SYMBOLS } from "../data/Data";
 
-const Hero = () => {
+const Hero = ({ onLoaded, onFail }) => {
   return (
     <div className="hero-section">
       <div className="hero_content">
@@ -28,7 +28,12 @@ const Hero = () => {
 
       <div className="hero_visual">
         <img src={onion_ring} className="onion" />
-        <img src={hero_img} className="hero-pizza" />
+        <img
+          src={hero_img}
+          className="hero-pizza"
+          onLoad={onLoaded}
+          onError={onFail}
+        />
         <img src={tomato} className="tomato" />
       </div>
     </div>

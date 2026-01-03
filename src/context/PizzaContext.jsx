@@ -47,7 +47,6 @@ export const PizzaProvider = ({ children }) => {
     loadPizzas();
   }, []);
 
-  console.log(state);
   return (
     <PizzaContext.Provider value={{ ...state, dispatch }}>
       {children}

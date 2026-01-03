@@ -1,5 +1,5 @@
 import "../styles/error.css";
-import errorImg from "../assets/photos/error/pizza-error.png";
+import errorImg from "../assets/photos/error/pizza-broken.png";
 import { Link } from "react-router-dom";
 import { BUTTONS, TEXTS } from "../data/Data";
 

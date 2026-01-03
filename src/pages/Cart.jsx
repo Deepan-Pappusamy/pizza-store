@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { PizzaContext } from "../context/PizzaContext";
 import "../styles/cart.css";
 import { BUTTONS, SYMBOLS, TEXTS } from "../data/Data";
+import cartEmpty from "../assets/photos/cart/cart-empty.png";
 
 const Cart = () => {
   const { cart, totalPrice, dispatch } = useContext(PizzaContext);
@@ -14,6 +15,7 @@ const Cart = () => {
       <div className="cart-section">
         <div className="cart-empty">
           <h3>{TEXTS.CART_EMPTY}</h3>
+          <img src={cartEmpty} />
           <Link to="/store">
             <button>{BUTTONS.GO_TO_STORE}</button>
           </Link>

@@ -102,7 +102,7 @@ export const TEXTS = {
   FILTER_LESS_THAN: "Less than",
 
   //CART
-  CART_EMPTY: "Your cart is empty ",
+  CART_EMPTY: "Cart is empty, but your stomach doesn’t have to be…",
   CART_SUB_TOTAL: "Subtotal: ₹",
   CART_TOTAL: "Total: ₹",
 
@@ -110,7 +110,7 @@ export const TEXTS = {
   CARD_OFF: "% OFF",
 
   //ERROR
-  ERROR_SOMETHING_WRONG: "Uh-oh! Something went wrong…",
+  ERROR_SOMETHING_WRONG: "Database oven overheated…",
 
   //LOADING
   FETCHING_DATA: "Fetching Data Please Wait...",

@@ -1,27 +1,17 @@
-.error-section {
+.notfound-section {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fbfbfb;
+  background-color: #fafafa;
 }
-.error-section h3 {
-  font-weight: bold;
-}
-.error-img-sec {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
-}
-.error-img-sec img {
+.notfound-section img {
   width: 100%;
   max-width: 300px;
 }
-.error-section button {
+.notfound-section button {
   margin-top: var(--space-md);
   background: #d62828;
   color: #fff;
@@ -34,6 +24,6 @@
   transition: background 0.3s ease;
 }
 
-.error-section button:hover {
+.notfound-section button:hover {
   background-color: #140101;
 }
